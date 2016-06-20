@@ -18,7 +18,152 @@
 
    <div class="row">
       <div class="large-12 columns">
-         
+         <h2>Intro</h2>
+         <p>If you're in the planning stages of a website, this guide can help you think of future probelems that you may face. If you're site is already finished, and you want to make sure it is accessible - go through this guide step by step. If you're
+            just looking for a quick and dirty way to check a page for violations, see "Resources" at the bottom of the page.</p>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="large-12 columns">
+         <span class="section-number">1. Text Equivalents</span>
+
+         <div class="item">
+            <p>Every image, applet, embedded media, plug-in, etc. that conveys content has equivalent alternative text (<span class="mono">alt</span>, <span class="mono">longdesc</span>, or in the element context).</p>
+            <div class="switch large">
+               <input class="switch-input" id="1a" type="checkbox" name="exampleSwitch">
+               <label class="switch-paddle" for="1a">
+                  <span class="show-for-sr">Does your site have alt text?</span>
+                  <span class="switch-active" aria-hidden="true">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+               </label>
+            </div>
+         </div>
+
+         <div class="item">
+            <p>The alternative text succinctly describes the content conveyed by the element, without being too verbose (for simple objects) or too vague (for complex objects).</p>
+            <div class="switch large">
+               <input class="switch-input" id="1b" type="checkbox" name="exampleSwitch">
+               <label class="switch-paddle" for="1b">
+                  <span class="show-for-sr">Does your site have alt text?</span>
+                  <span class="switch-active" aria-hidden="true">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+               </label>
+            </div>
+         </div>
+
+         <div class="item">
+            <p>Complex graphics (graphs, charts, etc.) are accompanied by equivalent text, either through a description in the body of the page, a link to a description on a separate page, and/or the <span class="mono">longdesc</span> attribute. Note: Until the longdesc attribute is better supported, it is best to use it in conjunction with a standard link to a longer description.</p>
+            <div class="switch large">
+               <input class="switch-input" id="1c" type="checkbox" name="exampleSwitch">
+               <label class="switch-paddle" for="1c">
+                  <span class="show-for-sr">Does your site have alt text?</span>
+                  <span class="switch-active" aria-hidden="true">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+               </label>
+            </div>
+         </div>
+
+         <div class="item">
+            <p>Decorative graphics are CSS background images or have null/empty alt values (<span class="mono">alt=""</span>). Images with text alternatives in element content are given empty alt text to avoid redundancy.</p>
+            <div class="switch large">
+               <input class="switch-input" id="1d" type="checkbox" name="exampleSwitch">
+               <label class="switch-paddle" for="1d">
+                  <span class="show-for-sr">Does your site have alt text?</span>
+                  <span class="switch-active" aria-hidden="true">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+               </label>
+            </div>
+         </div>
+
+         <div class="item">
+            <p>Images that have a function (images within links, image buttons, and image map areas) have alternative text which describes the associated function.</p>
+            <div class="switch large">
+               <input class="switch-input" id="1e" type="checkbox" name="exampleSwitch">
+               <label class="switch-paddle" for="1e">
+                  <span class="show-for-sr">Does your site have alt text?</span>
+                  <span class="switch-active" aria-hidden="true">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+               </label>
+            </div>
+         </div>
+
+         <div class="item">
+            <p>Transcripts are provided for audio content.</p>
+            <div class="switch large">
+               <input class="switch-input" id="1f" type="checkbox" name="exampleSwitch">
+               <label class="switch-paddle" for="1f">
+                  <span class="show-for-sr">Does your site have alt text?</span>
+                  <span class="switch-active" aria-hidden="true">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+               </label>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <div class="row" style="margin-top: 2em;">
+      <div class="large-12 columns">
+         <span class="section-number">2. Synchronized Alternatives</span>
+
+         <div class="item">
+            <p>Video files and live audio broadcasts have synchronized captions.</p>
+            <div class="switch large">
+               <input class="switch-input" id="2a" type="checkbox" name="exampleSwitch">
+               <label class="switch-paddle" for="2a">
+                  <span class="show-for-sr">Does your site have alt text?</span>
+                  <span class="switch-active" aria-hidden="true">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+               </label>
+            </div>
+         </div>
+
+         <div class="item">
+            <p>Content presented through video, but not through audio is provided in an audio description track.</p>
+            <div class="switch large">
+               <input class="switch-input" id="2b" type="checkbox" name="exampleSwitch">
+               <label class="switch-paddle" for="2b">
+                  <span class="show-for-sr">Does your site have alt text?</span>
+                  <span class="switch-active" aria-hidden="true">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+               </label>
+            </div>
+         </div>
+
+
+      </div>
+   </div>
+
+   <div class="row" style="margin-top: 2em;">
+      <div class="large-12 columns">
+         <span class="section-number">3. Color</span>
+
+         <div class="item">
+            <p>Color is not used solely to convey important information.</p>
+            <div class="switch large">
+               <input class="switch-input" id="3a" type="checkbox" name="exampleSwitch">
+               <label class="switch-paddle" for="3a">
+                  <span class="show-for-sr">Color is not used solely to convey important information.</span>
+                  <span class="switch-active" aria-hidden="true">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+               </label>
+            </div>
+         </div>
+
+         <div class="item">
+            <p>Sufficient contrast is provided.</p>
+            <div class="switch large">
+               <input class="switch-input" id="3b" type="checkbox" name="exampleSwitch">
+               <label class="switch-paddle" for="3b">
+                  <span class="show-for-sr">Sufficient contrast is provided.</span>
+                  <span class="switch-active" aria-hidden="true">Yes</span>
+                  <span class="switch-inactive" aria-hidden="true">No</span>
+               </label>
+            </div>
+         </div>
+
+
       </div>
    </div>
 
