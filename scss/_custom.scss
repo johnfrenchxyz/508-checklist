@@ -1,0 +1,62 @@
+// Typography
+//-----------
+@import 'https://fonts.googleapis.com/css?family=Bungee+Inline|Montserrat|Roboto+Mono';
+
+
+// Variables
+//----------
+$black: #0B2027;
+$blue: #40798C;
+$green: #496f69;
+$tan: #CFD7C7;
+$yellow: #F6F1D1;
+$white: #ededed;
+
+body {
+   background: $tan;
+}
+
+h1, h2 {
+   font-family: 'Bungee Inline', cursive;
+   transition: 250ms ease;
+}
+
+h3, h4, h5, h6, p, a {
+   font-family: 'Montserrat', sans-serif;
+}
+
+h1 { color: $blue; }
+h2 { color: $green; }
+p { color: $black; }
+
+.mono {
+   font-family: 'Roboto Mono', monospace;
+   font-weight: bold;
+}
+
+// Item
+.item {
+   background: lighten($tan, 5%);
+   display: block;
+   height: auto;
+   overflow: hidden;
+   padding-left: .5em;
+   padding-right: .5em;
+   padding-top: .8em;
+   margin-top: 1em;
+   vertical-align: middle;
+   div { vertical-align: middle; display: block;}
+   p { display: block; }
+}
+
+// Section Numbers
+//----------------
+.section-number {
+   font-family: 'Bungee Inline', cursive;
+   font-size: rem-calc(48);
+   transition: 250ms ease;
+   color: $green;
+   @include breakpoint(small only) {
+      font-size: rem-calc(36);
+   }
+}
