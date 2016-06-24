@@ -182,6 +182,17 @@ main {
       }
    }
 
+   .table-of-contents-section {
+      @include section($green, $white, $white, $white);
+      .table-of-contents-heading {
+         @include heading($white, rem-calc(36));
+      }
+      ul {
+         list-style: none;
+         margin-left: 0;
+      }
+   }
+
    .checklist-section {
       @include section($white, $black, $blue, $black);
       .checklist-heading {
